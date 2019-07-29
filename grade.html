@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<nav>
+    <div class="nav-wrapper teal">
+        <a href="#!" class="brand-logo">Grade</a>
+        <div onclick="window.history.back()" class="left"><i class="material-icons">arrow_back</i></div>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">account_circle
+        </i></a>
+    </div>
+</nav>
+
+<table class="striped">
+    <thead>
+    <tr>
+        <th>Course</th>
+        <th>Credit</th>
+        <th>Half</th>
+        <th>Final</th>
+        <th>Total</th>
+        <th>GPA</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>Math</td>
+        <td>4</td>
+        <td>87</td>
+        <td>92</td>
+        <td>90</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>English</td>
+        <td>4</td>
+        <td>87</td>
+        <td>92</td>
+        <td>90</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Physics</td>
+        <td>4</td>
+        <td>87</td>
+        <td>92</td>
+        <td>90</td>
+        <td>4</td>
+    </tr>
+    </tbody>
+</table>
+
+<ul class="sidenav" id="mobile-demo">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="image/teal.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="image/back.png"></a>
+            <a href="#name"><span class="white-text name">T yi</span></a>
+            <a href="#email"><span class="white-text email">t_yi@gmail.com</span></a>
+        </div>
+    </li>
+    <li><a href="course.html">Course List</a></li>
+    <li><a href="grade.html">Grade</a></li>
+    <li><a href="time_table.html">Time Table</a></li>
+</ul>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded',  () => {
+        let nav = document.querySelectorAll('.sidenav');
+        let ins_nav = M.Sidenav.init(nav,{edge:"right"});
+    });
+</script>
+</body>
+</html>

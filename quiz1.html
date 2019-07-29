@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+</head>
+
+<body>
+<nav>
+    <div class="nav-wrapper teal">
+        <a href="#!" class="brand-logo">1/2</a>
+        <div onclick="window.history.back()" class="left"><i class="material-icons">arrow_back</i></div>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">account_circle
+        </i></a>
+    </div>
+</nav>
+
+
+<div id="ques1" class="col s12">
+    <div class="card-panel">
+        <p>1.The largest cell in the body is (   ).</p>
+    </div>
+<form action="#">
+    <p>
+        <label>
+            <input name="group1" type="radio" checked />
+            <span>A. Ovum.</span>
+        </label>
+    </p>
+    <p>
+        <label>
+            <input name="group1" type="radio" />
+            <span>B. Brain cells.</span>
+        </label>
+    </p>
+    <p>
+        <label>
+            <input name="group1" type="radio"  />
+            <span>C. Lymphocyte.</span>
+        </label>
+    </p>
+    <p>
+        <label>
+            <input name="group1" type="radio" />
+            <span>D. Stem cell.</span>
+        </label>
+    </p>
+</form>
+</div>
+
+<div id="button1" class="col s12">
+    <a class="waves-effect waves-light btn" style="float:right" href="quiz2.html"><i class="material-icons right">chevron_right</i>next</a>
+</div>
+
+<ul class="sidenav" id="mobile-demo">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="image/teal.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="image/back.png"></a>
+            <a href="#name"><span class="white-text name">T yi</span></a>
+            <a href="#email"><span class="white-text email">t_yi@gmail.com</span></a>
+        </div>
+    </li>
+    <li><a href="course.html">Course List</a></li>
+    <li><a href="grade.html">Grade</a></li>
+    <li><a href="time_table.html">Time Table</a></li>
+</ul>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded',  () => {
+        let nav = document.querySelectorAll('.sidenav');
+        let ins_nav = M.Sidenav.init(nav,{edge:'right'});
+    });
+</script>
+</body>
+</html>

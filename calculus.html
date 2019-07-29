@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Let browser know website is optimized for mobile-->
+    <style type="text/css">
+        .filebox {
+            height: 70px;
+            background-color: white;
+        }
+
+        .box-img {
+            height: 50px;
+            width: 50px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+
+        .box-filename {
+            position: relative;
+            top: -40px;
+            left: 80px;
+        }
+
+        .box-filesize {
+            position: relative;
+            top: -50px;
+            left: 80px;
+            color: #A4A3A3;
+        }
+
+        .box-filemanager {
+            position: relative;
+            top: -85px;
+            left: 180px;
+            color: #0062CC;
+        }
+
+        .box-filedate {
+            position: relative;
+            top: -175px;
+            left: 272px;
+        }
+
+        .box-fileicon {
+            position: relative;
+            top: -120px;
+            left: 280px;
+        }
+
+        .filename {
+            font-size: 100%;
+        }
+
+        .filesize {
+            font-size: 100%;
+        }
+
+        .filemanager {
+            font-size: 100%;
+        }
+
+        .hr {
+            position: relative;
+            top: -150px;
+        }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+<nav class="nav-extended teal">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Calculus</a>
+        <a href="course.html" class="left"><i class="material-icons">arrow_back</i></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">account_circle
+        </i></a>
+        <a href="#" data-browse=""></a>
+    </div>
+    <div class="nav-content">
+        <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="#files"><i class="material-icons">folder_open</i></a></li>
+            <li class="tab"><a href="#func"><i class="material-icons">format_list_bulleted</i></a></li>
+            <li class="tab"><a href="#notice"><i class="material-icons">notifications_none</i></a></li>
+            <li class="tab"><a href="#message"><i class="material-icons">message</i></a></li>
+            <li class="tab"><a href="#info"><i class="material-icons">more_horiz</i></a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="image/teal.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="image/back.png"></a>
+            <a href="#name"><span class="white-text name">T yi</span></a>
+            <a href="#email"><span class="white-text email">t_yi@gmail.com</span></a>
+        </div>
+    </li>
+    <li><a href="course.html">Course List</a></li>
+    <li><a href="grade.html">Grade</a></li>
+    <li><a href="time_table.html">Time Table</a></li>
+</ul>
+
+<div id="files">
+    <div class="filebox">
+        <div class="box-img">
+            <img src="image/pdf.png" width="50px" height="50px">
+        </div>
+        <div class="box-filename">
+            <p class="filename">TAPUS Presentation.pdf</p>
+        </div>
+        <div class="box-filesize">
+            <p class="filesize">400.8K from</p>
+        </div>
+        <div class="box-filemanager">
+            <p class="filemanager">TangYi</p>
+        </div>
+        <div class="box-fileicon">
+            <i class="material-icons" style="color:#A4A3A3;">file_download</i>
+        </div>
+        <div class="box-filedate">
+            <p class="filedate" style="color:#A4A3A3;">07-22</p>
+        </div>
+        <hr class="hr">
+    </div>
+
+    <div class="filebox">
+        <div class="box-img">
+            <img src="image/img.png" width="50px" height="50px">
+        </div>
+        <div class="box-filename">
+            <p class="filename">TAPUS Presentation.pdf</p>
+        </div>
+        <div class="box-filesize">
+            <p class="filesize">400.8K from</p>
+        </div>
+        <div class="box-filemanager">
+            <p class="filemanager">TangYi</p>
+        </div>
+        <div class="box-fileicon">
+            <i class="material-icons" style="color:#A4A3A3;">file_download</i>
+        </div>
+        <div class="box-filedate">
+            <p class="filedate" style="color:#A4A3A3;">07-22</p>
+        </div>
+        <hr class="hr">
+    </div>
+
+    <div class="filebox">
+        <div class="box-img">
+            <img src="image/doc.png" width="50px" height="50px">
+        </div>
+        <div class="box-filename">
+            <p class="filename">TAPUS Presentation.pdf</p>
+        </div>
+        <div class="box-filesize">
+            <p class="filesize">400.8K from</p>
+        </div>
+        <div class="box-filemanager">
+            <p class="filemanager">TangYi</p>
+        </div>
+        <div class="box-fileicon">
+            <i class="material-icons" style="color:#A4A3A3;">file_download</i>
+        </div>
+        <div class="box-filedate">
+            <p class="filedate" style="color:#A4A3A3;">07-22</p>
+        </div>
+        <hr class="hr">
+    </div>
+
+    <div class="filebox">
+        <div class="box-img">
+            <img src="image/pdf.png" width="50px" height="50px">
+        </div>
+        <div class="box-filename">
+            <p class="filename">TAPUS Presentation.pdf</p>
+        </div>
+        <div class="box-filesize">
+            <p class="filesize">400.8K from</p>
+        </div>
+        <div class="box-filemanager">
+            <p class="filemanager">TangYi</p>
+        </div>
+        <div class="box-fileicon">
+            <i class="material-icons" style="color:#A4A3A3;">file_download</i>
+        </div>
+        <div class="box-filedate">
+            <p class="filedate" style="color:#A4A3A3;">07-22</p>
+        </div>
+        <hr class="hr">
+    </div>
+
+    <div class="filebox">
+        <div class="box-img">
+            <img src="image/xls.png" width="50px" height="50px">
+        </div>
+        <div class="box-filename">
+            <p class="filename">TAPUS Presentation.pdf</p>
+        </div>
+        <div class="box-filesize">
+            <p class="filesize">400.8K from</p>
+        </div>
+        <div class="box-filemanager">
+            <p class="filemanager">TangYi</p>
+        </div>
+        <div class="box-fileicon">
+            <i class="material-icons" style="color:#A4A3A3;">file_download</i>
+        </div>
+        <div class="box-filedate">
+            <p class="filedate" style="color:#A4A3A3;">07-22</p>
+        </div>
+        <hr class="hr">
+    </div>
+
+    <div class="filebox">
+        <div class="box-img">
+            <img src="image/xls.png" width="50px" height="50px">
+        </div>
+        <div class="box-filename">
+            <p class="filename">TAPUS Presentation.pdf</p>
+        </div>
+        <div class="box-filesize">
+            <p class="filesize">400.8K from</p>
+        </div>
+        <div class="box-filemanager">
+            <p class="filemanager">TangYi</p>
+        </div>
+        <div class="box-fileicon">
+            <i class="material-icons" style="color:#A4A3A3;">file_download</i>
+        </div>
+        <div class="box-filedate">
+            <p class="filedate" style="color:#A4A3A3;">07-22</p>
+        </div>
+        <hr class="hr">
+    </div>
+</div>
+
+<div id="func" class="col s12">
+    <div class="row">
+        <div class="col s12">
+            <div class="card-panel">
+                <ul class="tabs">
+                    <li class="tab"><a href="#underway"><span
+                            class="green-text text-darken-2">underway</span></a>
+                    </li>
+                    <li class="tab"><a href="#finished"><span
+                            class="green-text text-darken-2">finished</span></a>
+                    </li>
+                    <li class="tab"><a href="#all"><span class="green-text text-darken-2">all</span></a></li>
+                </ul>
+            </div>
+            <!--onclick underway showing the following eg.-->
+            <div id="underway">
+                <div class="col">
+                    <div class="card horizontal">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-image">
+                                    <img src="image/quiz.png" width="70px" height="70px">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card-stacked">
+                                    <div class="card-title">
+                                        <p>chapter one</p>
+                                    </div>
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"
+                                       href="quiz1.html"><i
+                                            class="material-icons">edit</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card horizontal">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-image">
+                                    <img src="image/quiz.png" width="70px" height="70px">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card-stacked">
+                                    <div class="card-title">
+                                        <p>chapter two</p>
+                                    </div>
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                            class="material-icons">edit</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card horizontal">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-image">
+                                    <img src="image/quiz.png" width="70px" height="70px">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card-stacked">
+                                    <div class="card-title">
+                                        <p>chapter three</p>
+                                    </div>
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                            class="material-icons">edit</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="finished">
+                <div class="col">
+                    <div class="card horizontal">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-image">
+                                    <img src="image/quiz.png" width="70px" height="70px">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card-stacked">
+                                    <div class="card-title">
+                                        <p>chapter one</p>
+                                    </div>
+                                    <a class="waves-effect waves-light btn red white-text"><i
+                                            class="material-icons right">playlist_add_check</i>See Answer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="all">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="notice" class="col-12">
+    <div id=1 class="card red lighten-1">
+        <i class="material-icons white-text">priority_high</i>
+        <div class="card-content white-text">
+            <p>VC Room not available today, please email me or QQ Yong Cheng if you need our help</p>
+        </div>
+
+        <div class="card-action">
+            <a class="waves-effect waves-light btn modal-trigger white right" href="#modal1" onclick="change_icon(1)">Read
+                More</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>VC Room not available today, please email me or QQ Yong Cheng if you need our help</h4>
+            <p>Dear Students
+
+                The VC Room is not available during certain times today. Therefore, if you need to consult me or Yong
+                Cheng, please email me or QQ Yong Cheng, and we will tell you where to meet us. Good luck and work hard
+                today!</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn">I know.</a>
+        </div>
+    </div>
+
+    <div id=2 class="card red lighten-1">
+        <i class="material-icons white-text">priority_high</i>
+        <div class="card-content white-text">
+            <p>Remember to come for your consultation sessions today!</p>
+        </div>
+        <div class="card-action">
+            <a class="waves-effect waves-light btn modal-trigger white right" onclick="change_icon(2)" href="#modal1">Read
+                More</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+
+            <h4>Remember to come for your consultation sessions today!</h4>
+            <br>
+            <p>Dear students
+
+                I hope you are enjoying your senior's projects in the showcase this morning. Please remember to come for
+                your consultations in the VC Room today after you have seen the showcase. Your timeslots start from 2pm
+                for the Group 1, and end at 9pm for Group 7, so please come during your allocated timeslot.
+
+                See you all later today!</div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">I know.</a>
+        </div>
+    </div>
+
+    <div id=3 class="card ">
+        <i class="material-icons teal-text">done</i>
+        <div class="card-content">
+            <p>VC Room not available today, please email me or QQ Yong Cheng if you need our help</p>
+        </div>
+        <div class="card-action">
+            <a class="waves-effect waves-light btn modal-trigger white right" onclick="change_icon(3)" href="#modal1">Read
+                More</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+
+            <h4>VC Room not available today, please email me or QQ Yong Cheng if you need our help</h4>
+            <p>Dear Students
+
+                The VC Room is not available during certain times today. Therefore, if you need to consult me or Yong
+                Cheng, please email me or QQ Yong Cheng, and we will tell you where to meet us. Good luck and work hard
+                today!</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">I know.</a>
+        </div>
+    </div>
+
+
+    <div id=4 class="card ">
+        <i class="material-icons teal-text">done</i>
+        <div class="card-content">
+            <p>VC Room not available today, please email me or QQ Yong Cheng if you need our help</p>
+        </div>
+        <div class="card-action">
+            <a class="waves-effect waves-light btn modal-trigger white right" onclick="change_icon(4)" href="#modal1">Read
+                More</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h4>VC Room not available today, please email me or QQ Yong Cheng if you need our help</h4>
+            <p>Dear Students
+
+                The VC Room is not available during certain times today. Therefore, if you need to consult me or Yong
+                Cheng, please email me or QQ Yong Cheng, and we will tell you where to meet us. Good luck and work hard
+                today!</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">I know.</a>
+        </div>
+    </div>
+
+
+    <div id=5 class="card ">
+        <i class="material-icons teal-text">done</i>
+        <div class="card-content">
+            <p>VC Room not available today, please email me or QQ Yong Cheng if you need our help</p>
+        </div>
+        <div class="card-action">
+            <a class="waves-effect waves-light btn modal-trigger white right" href="#modal1" onclick="change_icon(5)">Read
+                More</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <h4>VC Room not available today, please email me or QQ Yong Cheng if you need our help</h4>
+            <p>Dear Students
+
+                The VC Room is not available during certain times today. Therefore, if you need to consult me or Yong
+                Cheng, please email me or QQ Yong Cheng, and we will tell you where to meet us. Good luck and work hard
+                today!</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">I know.</a>
+        </div>
+    </div>
+</div>
+
+<div id="message" class="col s12">Test 4</div>
+
+<div id="info" class="col s12">
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header"><i class="material-icons">dehaze</i>Course Infomation</div>
+            <div class="collapsible-body"><span>
+                <div id="info1" class="col s12">
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header"><i class="material-icons">info</i>Course Introduction</div>
+            <div class="collapsible-body"><span>Organic chemistry is a science about carbon and carbon compounds. It aims at understanding the structure and function of life molecules and creating a large number of molecules to serve human life. This course mainly includes the classification and the application of modern organic structure theory, basic organic reaction law and main reaction mechanism.
+</span></div>
+        </li>
+        <li><div class="collapsible-header"><i class="material-icons">lightbulb_outline</i>Teaching Objective</div>
+            <div class="collapsible-body"><span><br>1. Understanding common organic molecules and mastering basic organic molecules.</br>
+                2. Master the results of organic molecules and the basic reaction rules and characteristics of organic molecular groups.</br>
+                3. Understanding Complex Life Systems at the Molecular Level. </span></div>
+        </li>
+    </ul>
+</div>
+            </span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">account_box</i>Teacher Infomation</div>
+            <div class="collapsible-body"><span>
+                <div class="col s12 m7">
+                    <h2 class="header">Liao Yong</h2>
+                     <div class="card horizontal">
+                         <div class="card-image">
+                             <img src="image/back.png">
+                         </div>
+                         <div class="card-stacked">
+                             <div class="card-content">
+                                 <p>OFFICE: X9118</br>
+                                     TEL: 1234567890</br>
+                                     E-MAIL: liaofan@qq.com
+                                </p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                <div class="col s12 m7">
+                    <h2 class="header">Zhang</h2>
+                     <div class="card horizontal">
+                         <div class="card-image">
+                             <img src="image/back.png">
+                         </div>
+                         <div class="card-stacked">
+                             <div class="card-content">
+                                 <p>OFFICE: X9118</br>
+                                     TEL: 1234567890</br>
+                                     E-MAIL: Zhang@qq.com
+                                </p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </span></div>
+
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">event_note</i>Exam Arrangement</div>
+            <div class="collapsible-body"><span>
+                <div class="row">
+                    <div class="col s12 m5">
+                        <div class="card-panel white">
+                            <span class="black-text">
+                                <p style="font-size:200%;color:green">
+                                    Mid-term Exam
+                                </p>
+                                <b>
+                                Time: 30 April</br>
+                                    Location: 411 Teaching Room,Teaching Building 4</br>
+                                    Attention: Take your own documents
+                                </b>
+                             </span>
+                        </div>
+                         <div class="card-panel white">
+                            <span class="black-text">
+                                <p style="font-size:200%;color:green">
+                                    Final Exam
+                                </p>
+                                <b>
+                                Time: 4 July</br>
+                                    Location: 539 Teaching Room,Teaching Building 5</br>
+                                    Attention: Take your own documents
+                                </b>
+                             </span>
+                        </div>
+                    </div>
+                </div>
+            </span></div>
+        </li>
+    </ul>
+
+</div>
+
+
+<!--JavaScript at end of body for optimized loading-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let nav = document.querySelectorAll('.sidenav');
+        let ins_nav = M.Sidenav.init(nav, {edge: "right"});
+        let tab = document.querySelectorAll('.tabs');
+        let ins_tab = M.Tabs.init(tab);
+        let coll = document.querySelectorAll('.collapsible');
+        let ins_coll = M.Collapsible.init(coll);
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+
+    function change_icon(_id) {
+        id = '#' + _id;
+        let card = $(id);
+        card.removeClass("red");
+        card.children(".white-text").removeClass("white-text");
+        card.children(".material-icons").text("done").addClass("teal-text");
+    }
+</script>
+</body>
+</html>
